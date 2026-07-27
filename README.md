@@ -25,20 +25,30 @@ Abra o seu terminal e execute os comandos abaixo:
 git clone https://github.com/NataliaJudice/DomusFi-.git
 cd DomusFi-
 ```
-### 2. Configurar o Banco de Dados (SQL Server)
-Como configurar e aplicar o banco de dados pelo Visual Studio:
+### 2. Configurar a Connection String e o Banco de Dados
+Para que o backend consiga se comunicar com o banco de dados, é necessário configurar a Connection String no arquivo de configurações da API (appsettings.Development.json ou appsettings.json na pasta do backend).
+
+Certifique-se de adicionar a seguinte estrutura de conexão no seu arquivo de configuração:
+
+```bash
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DomusFi_DB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30"
+  }
+}
+```
+### Como aplicar o banco de dados pelo Visual Studio:
 Abra a solução abrindo o arquivo DomusFi.sln localizado na pasta Backend/DomusFi/.
 
-No menu superior, vá em View > Other Windows > Package Manager Console.
+No menu superior, vá em Exibir > Outras janelas > Console do Gerenciador de Pacotes.
 
-Na parte superior do console que abrir na tela, certifique-se de que o Default project está selecionado como DomusFi.Infra.Data (ou a camada responsável pelas migrations).
+Na parte superior do console que abrir na tela, certifique-se de que o "Projeto padrão está selecionado como DomusFi.Infra.Data.
+<img width="865" height="77" alt="Sem título" src="https://github.com/user-attachments/assets/56cdb21a-81a4-432c-a37c-5aa874389acf" />
 
 Execute o comando para aplicar o banco de dados no seu SQL Server local:
 ```bash
-Update-Database
+Update-database
 ```
-(Ou, se preferir via terminal na pasta da API: dotnet ef database update)
-
 ### 3. Executar o Backend
 Navegue até a pasta da API:
 ```bash
