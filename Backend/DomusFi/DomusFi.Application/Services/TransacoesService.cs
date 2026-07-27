@@ -355,7 +355,6 @@ namespace DomusFi.Application.Services
                 var qtdTotalTransacoes = await _transacoesRepository.ObterQtdTotalTransacoesPorPessoa(idPessoa);
 
                 // 2. Busca dados filtrados considerando termo, tipo e datas
-                // Dica: Se necessário, atualize a assinatura de 'ObterTotalTransacoesFiltradas' para receber as datas também.
                 var totalFiltradas = await _transacoesRepository.ObterTotalTransacoesFiltradas(idPessoa, termo, tipo);
 
                 var transacoesEntidade = await _transacoesRepository.ObterTransacoesPorPessoa(
