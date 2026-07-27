@@ -1,0 +1,6 @@
+@DomusFi.API_HostAddress = http://localhost:5190
+
+GET {{DomusFi.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

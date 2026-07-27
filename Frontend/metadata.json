@@ -1,0 +1,6 @@
+{
+  "name": "DomusFi",
+  "description": "Sistema de controle de gastos residenciais com cadastro de pessoas, transações e consulta de totais com validação de menor de idade.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

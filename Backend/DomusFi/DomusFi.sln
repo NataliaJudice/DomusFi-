@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomusFi.API", "DomusFi.API\DomusFi.API.csproj", "{5FB60628-59FB-4B61-9DCF-1F7B43C1874C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomusFi.Domain", "DomusFi.Domain\DomusFi.Domain.csproj", "{CCCBE8B7-EEE9-4D77-8C3D-B6D5FC999D47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomusFi.Application", "DomusFi.Application\DomusFi.Application.csproj", "{8585D7AD-CDC6-4458-B8F1-01C9648DDF6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomusFi.Infra.Data", "DomusFi.Infra.Data\DomusFi.Infra.Data.csproj", "{B2A4CC38-6B20-4B78-80D7-2265EA1EFEB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomusFi.Infra.Ioc", "DomusFi.Infra.Ioc\DomusFi.Infra.Ioc.csproj", "{1FE6C41A-219A-462B-8189-C54FF41E12AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FB60628-59FB-4B61-9DCF-1F7B43C1874C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB60628-59FB-4B61-9DCF-1F7B43C1874C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB60628-59FB-4B61-9DCF-1F7B43C1874C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB60628-59FB-4B61-9DCF-1F7B43C1874C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCCBE8B7-EEE9-4D77-8C3D-B6D5FC999D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCCBE8B7-EEE9-4D77-8C3D-B6D5FC999D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCCBE8B7-EEE9-4D77-8C3D-B6D5FC999D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCCBE8B7-EEE9-4D77-8C3D-B6D5FC999D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8585D7AD-CDC6-4458-B8F1-01C9648DDF6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8585D7AD-CDC6-4458-B8F1-01C9648DDF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8585D7AD-CDC6-4458-B8F1-01C9648DDF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8585D7AD-CDC6-4458-B8F1-01C9648DDF6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A4CC38-6B20-4B78-80D7-2265EA1EFEB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A4CC38-6B20-4B78-80D7-2265EA1EFEB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A4CC38-6B20-4B78-80D7-2265EA1EFEB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A4CC38-6B20-4B78-80D7-2265EA1EFEB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE6C41A-219A-462B-8189-C54FF41E12AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE6C41A-219A-462B-8189-C54FF41E12AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE6C41A-219A-462B-8189-C54FF41E12AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE6C41A-219A-462B-8189-C54FF41E12AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {592FC9B7-7E3C-4834-BEDD-18DFB53E2553}
+	EndGlobalSection
+EndGlobal
