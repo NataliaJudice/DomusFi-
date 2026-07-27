@@ -50,9 +50,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   return (
     <>
-      {/* ======================================================== */}
-      {/* BARRA SUPERIOR FIXA (Visível no Topo do App)            */}
-      {/* ======================================================== */}
+
+      {/* BARRA SUPERIOR FIXA (Visível no Topo do App)*/}
+   
       <header className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-30 px-4 py-3 flex items-center justify-between shadow-xs w-full">
         <div className="flex items-center gap-3">
           <button
@@ -80,9 +80,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </div>
       </header>
 
-      {/* ======================================================== */}
-      {/* DRAWER SLIDE-IN (Menu Lateral Retrátil)                 */}
-      {/* ======================================================== */}
+      {/* Menu Lateral Retrátil*/}
+
       <AnimatePresence>
         {isMobileOpen && (
           <div className="fixed inset-0 z-50 flex">
@@ -227,7 +226,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     </span>
                   </button>
 
-                  {/* NOVO BOTÃO: Gerador de Relatórios */}
+                  {/* Gerador de Relatórios */}
                   <button
                     onClick={() => handleNavegar('relatorios')}
                     className={`w-full px-3.5 py-3 rounded-xl text-xs font-semibold flex items-center justify-between transition-all cursor-pointer ${
@@ -246,16 +245,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
               {/* Botão de Reset no Rodapé */}
               <div className="p-4 border-t border-slate-100 dark:border-slate-800">
-                <button
-                  onClick={() => {
-                    setIsMobileOpen(false);
-                    handleReset();
-                  }}
-                  className="w-full py-2.5 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 bg-slate-50 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
-                >
-                  <RotateCcw className="w-4 h-4" />
-                  Restaurar Dados Demonstrativos
-                </button>
+                
               </div>
             </motion.aside>
           </div>

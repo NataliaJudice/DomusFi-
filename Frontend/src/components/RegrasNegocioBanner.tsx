@@ -1,11 +1,6 @@
 /**
  * Banner informativo das Regras de Negócio do Desafio Técnico
- *
- * Exibe visualmente a conformidade do sistema com cada item do requisito:
- * 1. Cadastro de Pessoas (ID, Nome, Idade)
- * 2. Exclusão em Cascata (Deletar pessoa remove suas transações)
- * 3. Validação de Idade (Menor de 18 anos restrito a Despesas)
- * 4. Consulta de Totais (Receitas, Despesas, Saldo individual e Total Geral)
+
  */
 
 import React, { useState } from 'react';

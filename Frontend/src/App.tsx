@@ -74,9 +74,8 @@ export function AppContent() {
   };
 
   return (
-    /* flex-col garante que o Header fique no topo e o conteúdo ocupe toda a largura abaixo */
     <div className="min-h-screen bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors w-full">
-      {/* Header do Topo + Drawer retrátil */}
+      {/* Header do Topo */}
       <Sidebar
         abaAtiva={abaAtiva}
         setAbaAtiva={handleMudarAba}
@@ -87,7 +86,7 @@ export function AppContent() {
         }}
       />
 
-      {/* ÁREA DE CONTEÚDO PRINCIPAL (OCUPA 100% DA TELA) */}
+      {/* ÁREA DE CONTEÚDO PRINCIPAL */}
       <div className="flex-1 flex flex-col w-full min-w-0">
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {pessoaDetalhesId ? (

@@ -1,10 +1,6 @@
 /**
  * Tela de Consulta de Totais (Visão Geral Financeira)
- *
- * Atende ao requisito do Desafio Técnico:
- * "Deverá listar todas as pessoas cadastradas, exibindo o total de receitas, despesas e
- * o saldo (receita - despesa) de cada uma. Ao final da listagem, deverá ser exibido o total geral
- * de todas as pessoas, incluindo o total de receitas, o total de despesas e o saldo líquido."
+
  */
 
 import React, { useState } from 'react';
@@ -354,7 +350,7 @@ export const TotaisConsulta: React.FC<TotaisConsultaProps> = ({
           </div>
         )}
 
-        {/* REQUISITO DO DESAFIO: RESUMO TOTAL GERAL AO FINAL DA LISTAGEM */}
+        {/* RESUMO TOTAL GERAL AO FINAL DA LISTAGEM */}
         {resumosPessoas.length > 0 && (
           <div className="mt-8 pt-6 border-t-2 border-slate-200 dark:border-slate-700">
             <div className="bg-slate-900 text-white rounded-2xl p-5 shadow-lg">

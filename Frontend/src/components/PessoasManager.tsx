@@ -1,6 +1,5 @@
 /**
  * Componente de Gestão de Pessoas (Listagem Clean com Modal)
- * Ajustado para evitar conflitos de padding com CSS global.
  */
 
 import React, { useState } from 'react';
@@ -110,7 +109,7 @@ export const PessoasManager: React.FC<PessoasManagerProps> = ({ onVerMaisPessoa 
 
         {/* Barra de Filtros */}
         <div className="mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3 bg-slate-50 dark:bg-slate-950 p-3 rounded-xl border border-slate-200/80 dark:border-slate-800 text-xs">
-          {/* Busca por Nome/Idade com padding-left inline forçado */}
+          {/* Busca por Nome/Idade  */}
           <div className="relative sm:col-span-2 flex items-center">
             <Search className="w-4 h-4 absolute left-3 text-slate-400 pointer-events-none z-10" />
             <input

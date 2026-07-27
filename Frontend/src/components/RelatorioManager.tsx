@@ -55,18 +55,18 @@ export const RelatoriosManager: React.FC = () => {
   const { pessoas } = useFinance();
   const isMobile = useIsMobile(768);
 
-  // 1. Estado do Tipo de Relatório Selecionado
+  // Estado do Tipo de Relatório Selecionado
   const [tipoRelatorio, setTipoRelatorio] = useState<TipoRelatorio>('ranking-receita');
 
-  // 2. Estados dos Filtros de Data
+  // Estados dos Filtros de Data
   const [dataInicio, setDataInicio] = useState<string>('');
   const [dataFim, setDataFim] = useState<string>('');
   const [filtroRapido, setFiltroRapido] = useState<'tudo' | 'este-mes' | 'mes-passado' | '30-dias' | 'ano-atual'>('tudo');
 
-  // 3. Estado do Filtro de Pessoa
+  // Estado do Filtro de Pessoa
   const [pessoaSelecionadaId, setPessoaSelecionadaId] = useState<string>('todas');
 
-  // 4. Estados para armazenamento dos dados retornados do Backend
+  // Estados para armazenamento dos dados retornados do Backend
   const [dadosRanking, setDadosRanking] = useState<RelatorioRankingResponseDTO | null>(null);
   const [dadosIndividual, setDadosIndividual] = useState<RelatorioIndividualResponseDTO | null>(null);
   const [carregando, setCarregando] = useState<boolean>(false);
@@ -158,7 +158,7 @@ export const RelatoriosManager: React.FC = () => {
     if (tipoRelatorio === 'ranking-receita' || tipoRelatorio === 'ranking-despesa') {
       const ehReceita = tipoRelatorio === 'ranking-receita';
 
-      // 1. Título do Relatório (Compacto)
+      // Título do Relatório
       worksheet.mergeCells('A1:F1');
       const tituloCell = worksheet.getCell('A1');
       tituloCell.value = `DOMUSFI - RANKING DE ${ehReceita ? 'RECEITAS' : 'DESPESAS'}`;
@@ -167,7 +167,7 @@ export const RelatoriosManager: React.FC = () => {
       tituloCell.alignment = { horizontal: 'center', vertical: 'middle' };
       worksheet.getRow(1).height = 28;
 
-      // 2. Cabeçalho das Colunas
+      // Cabeçalho das Colunas
       const headers = ['Posição', 'Nome da Pessoa', 'Idade', 'Total (R$)', 'Participação (%)', 'Qtd. Trans.'];
       const headerRow = worksheet.addRow(headers);
       headerRow.height = 22;
@@ -178,7 +178,7 @@ export const RelatoriosManager: React.FC = () => {
         cell.alignment = { horizontal: 'center', vertical: 'middle' };
       });
 
-      // 3. Adicionar Dados
+      // Adicionar Dados
       const totalGeral = dadosRanking?.totalGeralPeriodo || 1;
       (dadosRanking?.ranking || []).forEach((item) => {
         const pct = item.porcentagemParticipacao || ((item.totalValor || 0) / totalGeral) * 100;
@@ -249,7 +249,7 @@ export const RelatoriosManager: React.FC = () => {
       });
     }
 
-    // 4. Ajuste Automático COMPACTO de Largura das Colunas
+    // Ajuste Automático COMPACTO de Largura das Colunas
     worksheet.columns.forEach((column) => {
       let maxLen = 10;
       column.eachCell?.({ includeEmpty: true }, (cell) => {
@@ -263,7 +263,7 @@ export const RelatoriosManager: React.FC = () => {
       column.width = Math.min(maxLen + 3, 32);
     });
 
-    // 5. Download do Arquivo .xlsx
+    // Download do Arquivo .xlsx
     const buffer = await workbook.xlsx.writeBuffer();
     const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
     saveAs(blob, `relatorio_domusfi_${Date.now()}.xlsx`);

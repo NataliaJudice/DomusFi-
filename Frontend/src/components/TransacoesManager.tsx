@@ -1,10 +1,6 @@
 /**
  * Componente de Gestão de Transações (Consumindo API C# com Filtros, Período e Paginação)
- *
- * Atende aos requisitos do Desafio Técnico:
- * 1. Deleção e listagem de transações com requisição paginada do backend.
- * 2. REGRA DO MENOR DE IDADE no Modal de Cadastro.
- * 3. Modal Detalhada ao clicar nos cards de transação.
+
  */
 
 import React, { useState, useEffect, useCallback } from 'react';
