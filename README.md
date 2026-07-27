@@ -22,7 +22,7 @@ Certifique-se de ter o **Node.js** e o **.NET SDK** devidamente instalados em su
 ### 1. Clonar o Repositório
 Abra o seu terminal e execute os comandos abaixo:
 ```bash
-git clone [https://github.com/NataliaJudice/DomusFi-.git](https://github.com/NataliaJudice/DomusFi-.git)
+git clone https://github.com/NataliaJudice/DomusFi-.git
 cd DomusFi-
 ```
 ### 2. Configurar o Banco de Dados (SQL Server)
