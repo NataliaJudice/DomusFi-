@@ -201,7 +201,7 @@ namespace DomusFi.Infra.Data.Repositories
             // Filtro por Data Final (<=)
             if (dataFim.HasValue)
             {
-                // Opcional: Se quiser incluir o dia inteiro até as 23:59:59 quando vier apenas a data
+                
                 var fimDoDia = dataFim.Value.TimeOfDay == TimeSpan.Zero
                     ? dataFim.Value.AddDays(1).AddTicks(-1)
                     : dataFim.Value;
