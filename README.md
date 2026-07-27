@@ -31,11 +31,11 @@ Para que o backend consiga se comunicar com o banco de dados, é necessário con
 Certifique-se de adicionar a seguinte estrutura de conexão no seu arquivo de configuração:
 
 ```bash
-{
+
   "ConnectionStrings": {
     "DefaultConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DomusFi_DB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30"
-  }
-}
+  },
+
 ```
 ### Como aplicar o banco de dados pelo Visual Studio:
 Abra a solução abrindo o arquivo DomusFi.sln localizado na pasta Backend/DomusFi/.
