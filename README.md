@@ -3,7 +3,7 @@
 
 Sistema completo de gerenciamento financeiro e controle de propostas/pessoas, desenvolvido com React no frontend e C# / .NET (Clean Architecture) no backend.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 ### Frontend
 * **React** com **TypeScript**
 * **Vite**
@@ -15,7 +15,7 @@ Sistema completo de gerenciamento financeiro e controle de propostas/pessoas, de
 * **Clean Architecture** (`API`, `Application`, `Domain`, `Infra.Data`, `Infra.Ioc`)
 * **SQL Server** / **Entity Framework Core**
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 Certifique-se de ter o **Node.js** e o **.NET SDK** devidamente instalados em sua máquina antes de prosseguir.
 
